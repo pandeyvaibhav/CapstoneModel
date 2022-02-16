@@ -10,7 +10,7 @@ def get_recommendations():
     Get top 5 recommended products using ML models
     '''
     if request.method == 'POST':
-        username = request.form['uname']
+        username = request.form['userid']
         data_list = [[]]
         title=['Index', 'Product']
         text_info = "Invalid user! please enter valid user name."
